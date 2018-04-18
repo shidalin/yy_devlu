@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <BusinessComponet name="baal" dispname="baal">
+    <public>
+      <src name="src/public"/>
+    </public>
+    <client>
+      <src name="src/client"/>
+    </client>
+    <private>
+      <src name="src/private"/>
+    </private>
+    <test>
+      <src name="src/test"/>
+    </test>
+    <resource>
+      <src name="resources"/>
+    </resource>
+    <funnodes>
+      <funnode name="采购发票登记" code="BAJ50102" funnode="baal/ace/client/BAJ50102.fnf" service="baal/ace/service/BAJ50102.smf"/>
+      <funnode name="销售发票登记" code="BAJ50101" funnode="baal/ace/client/BAJ50101.fnf" service="baal/ace/service/BAJ50101.smf"/>
+    </funnodes>
+  </BusinessComponet>
+  <BusinessComponet name="fukuandan" dispname="fukuandan">
+    <public>
+      <src name="src/public"/>
+    </public>
+    <client>
+      <src name="src/client"/>
+    </client>
+    <private>
+      <src name="src/private"/>
+    </private>
+    <test>
+      <src name="src/test"/>
+    </test>
+    <resource>
+      <src name="resources"/>
+    </resource>
+    <funnodes>
+      <funnode name="付款申请单" code="BAJ10105" funnode="fukuandan/ace/client/BAJ10105.fnf" service="fukuandan/ace/service/BAJ10105.smf"/>
+      <funnode name="付款申请单" code="BAJ50107" funnode="fukuandan/ace/client/BAJ50107.fnf" service="fukuandan/ace/service/BAJ50107.smf"/>
+    </funnodes>
+  </BusinessComponet>
+</Manifest>

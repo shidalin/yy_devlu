@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding='gb2312'?>
+	<items docType="SDP_SCRIPT_ITEM">
+	<item>
+		<itemKey>0001</itemKey>
+		<itemName>单据类型</itemName>
+		<itemRule>bd_billtype</itemRule>
+		<sysField>systemcode</sysField>
+		<corpField></corpField>
+		<grpField>pk_billtypecode</grpField>
+		<fixedWhere>systemcode = 'PVINV' and PK_BILLTYPECODE in ('C201')</fixedWhere>
+	</item>
+	 <item>
+		<itemKey>0002</itemKey>
+		<itemName>模块</itemName>
+		<itemRule>md_module</itemRule>
+		<sysField>id</sysField>	
+		<corpField></corpField>
+		<grpField>id</grpField>
+		<fixedWhere>id = 'pvinv'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0002</itemKey>
+		<itemName>系统类型</itemName>
+		<itemRule>dap_dapsystem</itemRule>
+		<sysField>systypecode</sysField>	
+		<corpField></corpField>
+		<grpField>systypecode</grpField>
+		<fixedWhere>systypecode = 'PVINV'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0005</itemKey>
+		<itemName>编码映射表</itemName>
+		<itemRule>sm_codetocode</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>PK_CODETOCODE in('PVINV')</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0007</itemKey>
+		<itemName>单据模版</itemName>
+		<itemRule>pub_billtemplet</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField>nodecode</grpField>
+		<fixedWhere> (pk_corp='@@@@' and bill_templetname = 'SYSTEM' and nodecode like 'C120%')  </fixedWhere>
+	</item>
+	<item>
+		<itemKey>0008</itemKey>
+		<itemName>查询模版</itemName>
+		<itemRule>pub_query_templet</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField>node_code</grpField>
+		<fixedWhere>pk_corp='@@@@' and node_code like 'C120%'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0009</itemKey>
+		<itemName>打印模版</itemName>
+		<itemRule>pub_print_template</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField>vnodecode</grpField>
+		<fixedWhere>pk_corp='@@@@' and vnodecode like 'C120%'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0010</itemKey>
+		<itemName>报表模版</itemName>
+		<itemRule>pub_report_templet</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField>parent_code</grpField>
+		<fixedWhere>pk_corp='@@@@' and node_code like 'C120%'</fixedWhere>
+	</item>
+	
+	<item>
+		<itemKey>0012</itemKey>
+		<itemName>默认模版</itemName>
+		<itemRule>pub_systemplate</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField>funnode</grpField>
+		<fixedWhere>pk_corp='@@@@' and funnode like 'C120%'</fixedWhere>
+	</item>
+	
+	<item>
+		<itemKey>0014</itemKey>
+		<itemName>功能节点</itemName>
+		<itemRule>sm_funcregister</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>fun_code like 'C120%'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0016</itemKey>
+		<itemName>单据号规则</itemName>
+		<itemRule>pub_billcode_rule</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField>pk_billtypecode</grpField>
+		<fixedWhere>pk_billtypecode in ('C201')</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0017</itemKey>
+		<itemName>快捷键</itemName>
+		<itemRule>pub_hotkeyregister</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>fun_code like 'C120%'</fixedWhere>
+	</item>
+	
+	<item>
+		<itemKey>0020</itemKey>
+		<itemName>节点-模块对应关系</itemName>
+		<itemRule>sm_codetocode</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>funccode like 'C120%'</fixedWhere>
+	</item>
+	
+	<item>
+		<itemKey>0021</itemKey>
+		<itemName>自定义项</itemName>
+		<itemRule>bd_defused</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>FUN_CODE = 'C120'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0023</itemKey>
+		<itemName>档案引用关系注册表</itemName>
+		<itemRule>bd_ref_relation</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>referencingtablename like 'pvinv%'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0024</itemKey>
+		<itemName>凭证模板</itemName>
+		<itemRule>dap_vouchtemp</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>pk_sys = 'PVINV'</fixedWhere>
+	</item>
+	<item>
+		<itemKey>0025</itemKey>
+		<itemName>科目分类</itemName>
+		<itemRule>dap_insubjclass</itemRule>
+		<sysField></sysField>
+		<corpField></corpField>
+		<grpField></grpField>
+		<fixedWhere>pk_billtype = 'PVINV'</fixedWhere>
+	</item>
+	
+</items>	

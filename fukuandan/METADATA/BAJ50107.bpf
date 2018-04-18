@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="gbk"?>
+<component conRouterType="手动" createIndustry="0" createTime="2011-11-11 15:44:21" creator="" description="" displayName="fukuandan" fromSourceBmf="true" gencodestyle="NC传统样式" help="" id="618c6683-620a-416e-b4f5-f46b30dcef01" industry="0" industryChanged="false" industryIncrease="false" industryName="基础行业" isSource="false" isbizmodel="true" mainEntity="" modifier="" modifyIndustry="0" modifyTime="2012-06-26 20:43:55" name="fukuandan" namespace="baal" ownModule="baal" preLoad="false" resModuleName="fukuandan" resid="" version="54" versionType="0">
+    <celllist>
+        <opinterface componentID="618c6683-620a-416e-b4f5-f46b30dcef01" createIndustry="0" createTime="2011-11-11 15:44:24" creator="" description="" displayName="操作接口" fullClassName="nc.itf.baal.IFukuandanMaintain" height="155" help="" id="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" implClsName="nc.impl.baal.FukuandanMaintainImpl" industryChanged="false" isAuthorization="true" isBusiActivity="false" isBusiOperation="false" isSource="false" modifier="" modifyIndustry="0" modifyTime="2012-06-26 20:43:55" name="OpInterface" remote="true" resid="" singleton="true" transprop="NONE" version="" versionType="0" visibility="public" width="136" x="68" y="52">
+            <operationlist>
+                  <operation dataTypeStyle="SINGLE" defclassname="" displayName="删除" forBusinessEntity="N" help="" id="2b069154-b3da-466a-8e43-d75f427facc5" isAggVOReturn="false" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="delete" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="REQUIRED" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="2b069154-b3da-466a-8e43-d75f427facc5" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="2b069154-b3da-466a-8e43-d75f427facc5" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="增加" forBusinessEntity="N" help="" id="3b1e666e-bc40-48f7-8457-96b23d07f007" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="insert" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="REQUIRED" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="3b1e666e-bc40-48f7-8457-96b23d07f007" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="3b1e666e-bc40-48f7-8457-96b23d07f007" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="修改" forBusinessEntity="N" help="" id="f4dfcfce-b7eb-4407-a821-b1180ce4a6fe" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="update" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="REQUIRED" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="f4dfcfce-b7eb-4407-a821-b1180ce4a6fe" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="f4dfcfce-b7eb-4407-a821-b1180ce4a6fe" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+                   <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="查询" forBusinessEntity="N" help="" id="dff8add3-eeaa-42eb-abb1-114968ab57d8" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="queryByQueryScheme" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="REQUIRED" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="BS000010000100001056" dataTypeStyle="SINGLE" dbtype="varchar" description="" displayName="queryScheme" isAggVO="false" name="queryScheme" operationID="dff8add3-eeaa-42eb-abb1-114968ab57d8" paramTypeForLog="7" paramdefclassname="nc.ui.querytemplate.querytree.IQueryScheme" sequence="0" typeDisplayName="自定义项" typeName="CUSTOM" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="提交" forBusinessEntity="N" help="" id="a462a1a4-7ef0-4e2c-ae1c-890e2f52d07d" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="save" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="NEVER" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="a462a1a4-7ef0-4e2c-ae1c-890e2f52d07d" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="a462a1a4-7ef0-4e2c-ae1c-890e2f52d07d" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="收回" forBusinessEntity="N" help="" id="861d6c48-68bf-4181-a3d2-7909757647fa" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="unsave" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="NEVER" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="861d6c48-68bf-4181-a3d2-7909757647fa" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="861d6c48-68bf-4181-a3d2-7909757647fa" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="审批" forBusinessEntity="N" help="" id="6cd0529b-f505-482e-ac25-1ba5e8e8e43b" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="approve" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="NEVER" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="6cd0529b-f505-482e-ac25-1ba5e8e8e43b" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="6cd0529b-f505-482e-ac25-1ba5e8e8e43b" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="弃审" forBusinessEntity="N" help="" id="d1034e7e-4c87-4527-bc41-17c8eb7a6ba3" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="unapprove" opItfID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" transKind="NEVER" typeDisplayName="付款单" typeName="fukuandan" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="d1034e7e-4c87-4527-bc41-17c8eb7a6ba3" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                        <parameter dataType="6ec38eda-3752-462a-bb29-2adfukuandan" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="d1034e7e-4c87-4527-bc41-17c8eb7a6ba3" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="付款单" typeName="fukuandan" versionType="0"/>
+                    </paramlist>
+                </operation>
+            </operationlist>
+            <opImpllist>
+                <opItfImpl createTime="2011-11-19 11:27:58" creator="" description="" displayName="实现类" fullClassName="nc.impl.baal.FukuandanMaintainImpl" id="e4939fbc-92c0-42f2-9d48-7465a24c4394" name="Maintain" ownerElementID="08a4a581-1909-4fb3-9f70-cdd34b8b5d17" tag="" type="" versionType="0"/>
+            </opImpllist>
+        </opinterface>
+    </celllist>
+    <connectlist/>
+    <refdepends/>
+    <refdependLoseIDs/>
+    <cellRemoveLog/>
+    <rulers>
+        <ruler isHorizontal="true" unit="0">
+            <guideList/>
+        </ruler>
+        <ruler isHorizontal="false" unit="0">
+            <guideList/>
+        </ruler>
+    </rulers>
+</component>

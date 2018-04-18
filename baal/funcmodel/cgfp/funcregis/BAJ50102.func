@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="gbk"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="funcregister" class="nc.pubapp.pade.funcmodel.vo.FuncRegister"><property name="bmf_path" value="baal\METADATA\cgfp.bmf"/>
+<property name="busiActiveList">
+<list></list>
+</property>
+<property name="cfunid" value="0001ZZ10000000002UDF"/>
+<property name="class_name" value="nc.ui.pubapp.uif2app.ToftPanelAdaptorEx"/>
+<property name="dr" value="0"/>
+<property name="fun_name" value="采购发票登记"/>
+<property name="fun_property" value="0"/>
+<property name="funcRegisterButtonList">
+<list></list>
+</property>
+<property name="funcRegisterParamList">
+<list><bean class="nc.pubapp.pade.funcmodel.vo.FuncRegisterParam"><property name="dr" value="0"/>
+<property name="paramname" value="BeanConfigFilePath"/>
+<property name="paramvalue" value="nc/ui/baal/cgfp/ace/view/Cgfp_config.xml"/>
+<property name="parentid" value="0001ZZ10000000002UDF"/>
+<property name="pk_param" value="0001ZZ10000000002UDG"/>
+<property name="ts" value="2016-03-27 13:18:21"/>
+</bean>
+</list>
+</property>
+<property name="funcode" value="BAJ50102"/>
+<property name="funnode_path" value="baal\ace\client\BAJ50102.fnf"/>
+<property name="funtype" value="0"/>
+<property name="isbuttonpower" value="false"/>
+<property name="isenable" value="true"/>
+<property name="isfunctype" value="false"/>
+<property name="menuModelFilePath" value="baal/funcmodel/cgfp/menuitemregis/BAJ50102.menu"/>
+<property name="metaDataID" value="7695103a-8c77-4913-b53f-5d19e96d0913"/>
+<property name="moduleName" value="baal"/>
+<property name="orgtypecode" value="GROUPORGTYPE00000000"/>
+<property name="own_module" value="BAJ5"/>
+<property name="pageList">
+<list></list>
+</property>
+<property name="parent_id" value="0001ZZ10000000002SBF"/>
+<property name="pk_group" value="~"/>
+<property name="ts" value="2016-03-27 13:18:20"/>
+<property name="uif2model_path" value="baal\ace\uif2model\BAJ50102.umf"/>
+</bean>
+
+</beans>

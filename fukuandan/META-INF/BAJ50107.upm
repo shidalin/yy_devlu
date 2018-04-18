@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gbk"?>
+<module name="baal">
+	<public>
+		    <!-- 接口 -->
+		    <component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+	      <interface>nc.itf.baal.IFukuandanMaintain</interface>
+	      <implementation>nc.impl.baal.FukuandanMaintainImpl</implementation>
+	    </component>
+	</public>
+</module>

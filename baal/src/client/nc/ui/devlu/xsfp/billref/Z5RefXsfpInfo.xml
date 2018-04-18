@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 转单参照单据信息 -->
+	<bean id="refInfo" class="nc.ui.pubapp.billref.src.RefInfo">
+		<property name="headVO">
+			<!-- 上游单据主表VO -->
+			<bean class="nc.vo.ct.ar.entity.CtArVO">
+			</bean>
+		</property>
+		<!-- 上游单据子表VO -->
+		<property name="bodyVO">
+			<bean class="nc.vo.ct.ar.entity.CtArBVO">
+			</bean>
+		</property>
+		<!-- 上游单据AGGVO -->
+		<property name="billVO">
+			<bean class="nc.vo.ct.ar.entity.AggCtArVO">
+			</bean>
+		</property>
+		<property name="viewVO">
+			<bean class="nc.vo.ct.ar.entity.CtArbillViewVO">
+			</bean>
+		</property>
+		<property name="billNodeKey" value="Z502" />
+		<property name="billViewNodeKey" value="Z502L" />
+		<!-- 来源单据主表主键 -->
+		<property name="sourcevoPkName" value="csrcid"></property>
+		<!-- 来源单据单据号 -->
+		<property name="sourcevoBillNOName" value="vsrccode"></property>
+		<!-- 查询服务 -->
+		<property name="queryService">
+			<bean class="nc.ui.devlu.xsfp.billref.Z5QueryServiceForXsfp">
+			</bean>
+		</property>
+	</bean>
+</beans>

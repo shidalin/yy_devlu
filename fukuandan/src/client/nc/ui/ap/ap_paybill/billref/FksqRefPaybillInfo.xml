@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<!-- 转单参照单据信息 -->
+	<bean id="refInfo" class="nc.ui.pubapp.billref.src.RefInfo">
+		<property name="headVO">
+			<!-- 上游单据主表VO -->
+			<bean class="nc.vo.fukuandan.entity.FukuandanVO">
+			</bean>
+		</property>
+		<!-- 上游单据子表VO -->
+		<property name="bodyVO">
+			<bean class="nc.vo.fukuandan.entity.Fukuandan_bVO">
+			</bean>
+		</property>
+		<!-- 上游单据AGGVO -->
+		<property name="billVO">
+			<bean class="nc.vo.fukuandan.entity.AggFukuadanVO">
+			</bean>
+		</property>
+		<property name="viewVO">
+			<bean class="nc.vo.fukuandan.entity.FukuandanViewVO">
+			</bean>
+		</property>
+		<property name="billNodeKey" value="FKSQ01" />
+		<property name="billViewNodeKey" value="FKSQ01L" />
+		<property name="sourcevoPkName" value="top_billid"></property>
+	    <property name="sourcevoBillNOName" value="top_billno"></property>
+		<!-- 查询服务 -->
+		<property name="queryService">
+			<bean class="nc.ui.ap.ap_paybill.billref.FksqQueryServiceForPaybill">
+			</bean>
+		</property>
+	</bean>
+</beans>

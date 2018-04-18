@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="baal/classes" path="baal/src/public"/>
+	<classpathentry kind="src" output="baal/classes" path="baal/src/client"/>
+	<classpathentry kind="src" output="baal/classes" path="baal/src/private"/>
+	<classpathentry kind="src" output="baal/classes" path="baal/resources"/>
+	<classpathentry kind="src" output="baal/classes" path="baal/src/test"/>
+	<classpathentry kind="src" output="fukuandan/classes" path="fukuandan/src/public"/>
+	<classpathentry kind="src" output="fukuandan/classes" path="fukuandan/src/client"/>
+	<classpathentry kind="src" output="fukuandan/classes" path="fukuandan/src/private"/>
+	<classpathentry kind="src" output="fukuandan/classes" path="fukuandan/resources"/>
+	<classpathentry kind="src" output="fukuandan/classes" path="fukuandan/src/test"/>
+	<classpathentry kind="src" path="arap/src/client"/>
+	<classpathentry kind="src" path="arap/src/private"/>
+	<classpathentry kind="src" path="ct/src/client"/>
+	<classpathentry kind="src" path="ct/src/private"/>
+	<classpathentry kind="src" path="uap/src/public"/>
+	<classpathentry kind="src" output="out/resources" path="resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Ant_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Product_Common_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Middleware_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Framework_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Module_Public_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Module_Client_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Module_Private_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Module_Lang_Library"/>
+	<classpathentry kind="con" path="nc.uap.mde.library.container/Generated_EJB"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="gbk"?>
+<component conRouterType="手动" createIndustry="0" createTime="2011-11-11 15:44:21" creator="" description="" displayName="xsfp" fromSourceBmf="true" gencodestyle="NC传统样式" help="" id="6f94a1cf-bebf-434f-bc0c-32054c46deb1" industry="0" industryChanged="false" industryIncrease="false" industryName="基础行业" isSource="false" isbizmodel="true" mainEntity="" modifier="" modifyIndustry="0" modifyTime="2012-06-26 20:43:55" name="xsfp" namespace="devlu" ownModule="baal" preLoad="false" resModuleName="xsfp" resid="" version="54" versionType="0">
+    <celllist>
+        <opinterface componentID="6f94a1cf-bebf-434f-bc0c-32054c46deb1" createIndustry="0" createTime="2011-11-11 15:44:24" creator="" description="" displayName="操作接口" fullClassName="nc.itf.baal.IXsfpMaintain" height="155" help="" id="81e5077a-33dd-4b2f-81d5-a40942ca078a" implClsName="nc.impl.baal.XsfpMaintainImpl" industryChanged="false" isAuthorization="true" isBusiActivity="false" isBusiOperation="false" isSource="false" modifier="" modifyIndustry="0" modifyTime="2012-06-26 20:43:55" name="OpInterface" remote="true" resid="" singleton="true" transprop="NONE" version="" versionType="0" visibility="public" width="136" x="68" y="52">
+            <operationlist>
+                  <operation dataTypeStyle="SINGLE" defclassname="" displayName="删除" forBusinessEntity="N" help="" id="e140ce40-43f0-41a4-ac01-da23b36001ae" isAggVOReturn="false" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="delete" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="REQUIRED" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="e140ce40-43f0-41a4-ac01-da23b36001ae" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="e140ce40-43f0-41a4-ac01-da23b36001ae" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="增加" forBusinessEntity="N" help="" id="660ed210-30f0-4671-991b-cbfe6ea7caf2" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="insert" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="REQUIRED" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="660ed210-30f0-4671-991b-cbfe6ea7caf2" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="660ed210-30f0-4671-991b-cbfe6ea7caf2" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="修改" forBusinessEntity="N" help="" id="a82ad077-faca-42cd-9154-a3694f078542" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="update" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="REQUIRED" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="a82ad077-faca-42cd-9154-a3694f078542" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="a82ad077-faca-42cd-9154-a3694f078542" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+                   <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="查询" forBusinessEntity="N" help="" id="6f042551-2798-4679-8de0-d57b882c1065" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="queryByQueryScheme" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="REQUIRED" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="BS000010000100001056" dataTypeStyle="SINGLE" dbtype="varchar" description="" displayName="queryScheme" isAggVO="false" name="queryScheme" operationID="6f042551-2798-4679-8de0-d57b882c1065" paramTypeForLog="7" paramdefclassname="nc.ui.querytemplate.querytree.IQueryScheme" sequence="0" typeDisplayName="自定义项" typeName="CUSTOM" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="提交" forBusinessEntity="N" help="" id="a43c9abf-8ad9-4f62-89a9-1b5ec2315dfa" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="save" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="NEVER" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="a43c9abf-8ad9-4f62-89a9-1b5ec2315dfa" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="a43c9abf-8ad9-4f62-89a9-1b5ec2315dfa" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="收回" forBusinessEntity="N" help="" id="50c7980e-cfee-4a66-8283-802f7a516fba" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="unsave" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="NEVER" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="50c7980e-cfee-4a66-8283-802f7a516fba" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="50c7980e-cfee-4a66-8283-802f7a516fba" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="审批" forBusinessEntity="N" help="" id="e5849e11-1ad1-4a7b-81be-395950caabbf" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="approve" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="NEVER" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="e5849e11-1ad1-4a7b-81be-395950caabbf" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="e5849e11-1ad1-4a7b-81be-395950caabbf" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+                <operation dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" defclassname="" displayName="弃审" forBusinessEntity="N" help="" id="80c2ed90-2b9b-49c2-b922-24a42124a80e" isAggVOReturn="true" isBusiActivity="false" methodException="nc.vo.pub.BusinessException" name="unapprove" opItfID="81e5077a-33dd-4b2f-81d5-a40942ca078a" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" transKind="NEVER" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0" visibility="public">
+                    <paramlist>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="clientFullVOs" isAggVO="true" name="clientFullVOs" operationID="80c2ed90-2b9b-49c2-b922-24a42124a80e" paramTypeForLog="7" paramdefclassname="" sequence="0" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                        <parameter dataType="a0d90a52-439d-4107-a920-06d8638d311e" dataTypeStyle="ARRAY" dbtype="" description="" displayName="originBills" isAggVO="true" name="originBills" operationID="80c2ed90-2b9b-49c2-b922-24a42124a80e" paramTypeForLog="7" paramdefclassname="" sequence="1" typeDisplayName="销售发票主实体" typeName="xsfp" versionType="0"/>
+                    </paramlist>
+                </operation>
+            </operationlist>
+            <opImpllist>
+                <opItfImpl createTime="2011-11-19 11:27:58" creator="" description="" displayName="实现类" fullClassName="nc.impl.baal.XsfpMaintainImpl" id="2f0c9493-f698-4596-a1a7-7e07aba1725a" name="Maintain" ownerElementID="81e5077a-33dd-4b2f-81d5-a40942ca078a" tag="" type="" versionType="0"/>
+            </opImpllist>
+        </opinterface>
+    </celllist>
+    <connectlist/>
+    <refdepends/>
+    <refdependLoseIDs/>
+    <cellRemoveLog/>
+    <rulers>
+        <ruler isHorizontal="true" unit="0">
+            <guideList/>
+        </ruler>
+        <ruler isHorizontal="false" unit="0">
+            <guideList/>
+        </ruler>
+    </rulers>
+</component>

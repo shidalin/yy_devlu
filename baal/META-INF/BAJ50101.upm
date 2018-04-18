@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gbk"?>
+<module name="baal">
+	<public>
+		<!-- 接口 -->
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.baal.IXsfpMaintain</interface>
+			<implementation>nc.impl.baal.XsfpMaintainImpl</implementation>
+		</component>
+		<component priority="0" singleton="true" remote="true" tx="CMT" supportAlias="true">
+			<interface>nc.itf.baal.Z5RefQueryService</interface>
+			<implementation>nc.impl.baal.Z5RefQueryServiceImpl</implementation>
+		</component>
+	</public>
+</module>
